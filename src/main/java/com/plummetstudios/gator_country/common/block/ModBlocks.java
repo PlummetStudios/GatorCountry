@@ -1,17 +1,13 @@
-package com.plummetstudios.gator_country.block;
+package com.plummetstudios.gator_country.common.block;
 
 import com.plummetstudios.gator_country.GatorCountry;
-import com.plummetstudios.gator_country.block.custom.GatorEggBlock;
-import com.plummetstudios.gator_country.block.custom.ModFlammableRotatedPillarBlock;
-import com.plummetstudios.gator_country.item.ModItems;
-import net.minecraft.client.renderer.item.ItemProperties;
+import com.plummetstudios.gator_country.common.block.custom.GatorEggBlock;
+import com.plummetstudios.gator_country.common.block.custom.ModFlammableRotatedPillarBlock;
+import com.plummetstudios.gator_country.common.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.TurtleEggBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,13 +21,13 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, GatorCountry.MOD_ID);
 
 
-    public static final RegistryObject<Block> GATOR_NEST_BLOCk = registerBlock("gator_nest_block",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
+    public static final RegistryObject<Block> GATOR_NEST_BLOCK = registerBlock("gator_nest_block",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).sound(SoundType.ROOTED_DIRT)),
                     CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 
 
-    public static final RegistryObject<Block> GATOR_EGGS = registerBlock("gator_eggs",
+    public static final RegistryObject<Block> GATOR_EGG = registerBlock("gator_egg",
             () -> new GatorEggBlock(BlockBehaviour.Properties.of(Material.EGG)
                     .strength(0f)), CreativeModeTab.TAB_MISC);
 

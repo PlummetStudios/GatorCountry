@@ -1,4 +1,4 @@
-package com.plummetstudios.gator_country.block.custom;
+package com.plummetstudios.gator_country.common.block.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

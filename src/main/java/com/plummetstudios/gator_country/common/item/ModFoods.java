@@ -1,4 +1,4 @@
-package com.plummetstudios.gator_country.item;
+package com.plummetstudios.gator_country.common.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

@@ -1,7 +1,6 @@
-package com.plummetstudios.gator_country.item;
+package com.plummetstudios.gator_country.common.item;
 
 import com.plummetstudios.gator_country.GatorCountry;
-import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +14,9 @@ public class ModItems {
 
 public static final RegistryObject<Item> SLAB_OF_GATOR = ITEMS.register("slab_of_gator",
         () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).food(ModFoods.SLAB_OF_GATOR)));
+
+    public static final RegistryObject<Item> BANJO = ITEMS.register("banjo",
+            () -> new Banjo(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 
     public static void register(IEventBus eventBus) {

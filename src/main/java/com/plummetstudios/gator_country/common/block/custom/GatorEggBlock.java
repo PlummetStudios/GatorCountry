@@ -1,9 +1,9 @@
-package com.plummetstudios.gator_country.block.custom;
+package com.plummetstudios.gator_country.common.block.custom;
 
 import java.util.Random;
 import javax.annotation.Nullable;
 
-import com.plummetstudios.gator_country.block.ModBlocks;
+import com.plummetstudios.gator_country.common.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -19,10 +19,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -61,7 +59,7 @@ public class GatorEggBlock extends Block {
 
     private void destroyEgg(Level p_154851_, BlockState p_154852_, BlockPos p_154853_, Entity p_154854_, int p_154855_) {
         if (this.canDestroyEgg(p_154851_, p_154854_)) {
-            if (!p_154851_.isClientSide && p_154851_.random.nextInt(p_154855_) == 0 && p_154852_.is(ModBlocks.GATOR_EGGS.get())) {
+            if (!p_154851_.isClientSide && p_154851_.random.nextInt(p_154855_) == 0 && p_154852_.is(ModBlocks.GATOR_EGG.get())) {
                 this.decreaseEggs(p_154851_, p_154853_, p_154852_);
             }
 
