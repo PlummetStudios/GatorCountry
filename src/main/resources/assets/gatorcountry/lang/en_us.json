@@ -4,5 +4,8 @@
 
 
   "block.gatorcountry.gator_nest_block": "Nesting Block",
-  "block.gatorcountry.gator_egg": "Gator Egg"
+  "block.gatorcountry.gator_egg": "Gator Egg",
+
+  "advancement.gatorcountry.banjo_crafted.title": "Rainbow Connection",
+  "advancement.gatorcountry.banjo_crafted.description": "Craft a banjo!"
 }
