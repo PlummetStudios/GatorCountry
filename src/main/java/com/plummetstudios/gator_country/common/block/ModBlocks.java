@@ -32,6 +32,8 @@ public class ModBlocks {
                     .strength(0f)), CreativeModeTab.TAB_MISC);
 
 
+public static final RegistryObject<Block> GATOR_MEAT_BLOCK = registerBlock("gator_meat_block",
+        () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.CALCITE)), CreativeModeTab.TAB_MISC);
 
 
 

@@ -1,5 +1,6 @@
 package com.plummetstudios.gator_country;
 
+import com.plummetstudios.gator_country.common.ModSounds;
 import com.plummetstudios.gator_country.common.block.ModBlocks;
 import com.plummetstudios.gator_country.common.ModEntities;
 import com.plummetstudios.gator_country.common.entity.custom.AlligatorEntity;
@@ -41,6 +42,7 @@ public class GatorCountry {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModEntities.ENTITY_TYPES.register(eventBus);
+        ModSounds.register(eventBus);
         eventBus.addListener(this::setup);
         GeckoLib.initialize();
 

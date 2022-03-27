@@ -100,7 +100,13 @@ public class GatorEggBlock extends Block {
         }
 
     }
+    public static boolean hasProperHabitat(BlockGetter reader, BlockPos blockReader) {
+        return isProperHabitat(reader, blockReader.below());
+    }
 
+    public static boolean isProperHabitat(BlockGetter reader, BlockPos pos) {
+        return reader.getBlockState(pos).is(BlockTags.SAND);
+    }
     public static boolean onSand(BlockGetter p_57763_, BlockPos p_57764_) {
         return isSand(p_57763_, p_57764_.below());
     }
